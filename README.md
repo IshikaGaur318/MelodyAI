@@ -28,11 +28,14 @@ cd music-generation-ai
 
 2️⃣ Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install tensorflow keras numpy pandas music21 mido pretty_midi matplotlib tqdm pickle-mixin
 ```
 
 ## 🎼 Dataset
-Place MIDI files inside the `data/` directory before running `dataset.py`.
+Place MIDI files inside the `data/` directory before running.
+```bash
+python src/dataset.py
+```
 
 ## 🏋️ Training
 Run the following command to train the model:
@@ -57,6 +60,3 @@ The generated music will be saved as `generated_music.mid`.
 
 ## ⭐ Contributing
 Pull requests are welcome! Feel free to fork the repo and submit improvements. 😊
-
-## 📜 License
-MIT License © 2025 Your Name
